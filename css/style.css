@@ -1,0 +1,15 @@
+div.callout.panel {
+	text-align: center;
+	border-radius: 10px;
+/*	background-color: #f3f3f3;
+	border-color: #f3f3f3;*/
+}
+
+div.all-tools {
+	text-align: center;
+}
+
+img#chemical {
+	width: 50%;
+	height: 50%;
+}
