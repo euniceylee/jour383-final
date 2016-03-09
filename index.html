@@ -8,7 +8,9 @@
     <title>A Cocktail of Cold Medication</title>
     <!-- Purple Line CSS -->
     <link href="//cdn.knightlab.com/libs/purpleline/latest/css/purpleline.min.css" rel=
-    "stylesheet" type="text/css"><!-- Optional: Knight Lab webfonts -->
+    "stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/flippant.css">
+    <!-- Optional: Knight Lab webfonts -->
     <link href="//cloud.webtype.com/css/d4767ecb-457a-4677-8761-72f890add836.css" rel=
     "stylesheet" type="text/css">
 </head>
@@ -16,7 +18,7 @@
  <form>
     <div class="row">
       <div class="large-12 columns">
-        <label><h1> What ills you?</h1></label>
+        <label><h1> What are your symptoms?</h1></label>
         <input type="text" placeholder="Insert symptom here" />
       </div>
     </div>
@@ -28,7 +30,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="large-6 medium-6 columns">
+            <div class="large-6 medium-4 small-2 columns">
                 <div class="callout panel">
                     <h2 class>Guaifenesin</span></h1>
                         <img src="images/guaif.png" img id="chemical">
@@ -36,17 +38,19 @@
                     <p> Good for: runny noses and viral infections that affect nose, throat, and airways. Helps reduce cough congestion.</p>
                     <p></p>
                 </div>
+            </div>
+            <div class="large-6 medium-4 small-2 columns">
                 <div class="callout panel">
                     <h2 class>Dextromethorphan HBr</h1>
                         <img src="images/dextro.png" img id="chemical">
                     <p><b><i>Cough suppressant</p></b></i>
                     <p> Good for: temporarily relieving coughs caused by minor throat irritation </p>
-                    <p></p>
                 </div>
             </div>
         </div>
 </div>
-
-
+<!-- JavaScript-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/flippant.min.js"></script>    
 </body>
 </html>
