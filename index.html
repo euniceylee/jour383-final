@@ -15,42 +15,68 @@
     "stylesheet" type="text/css">
 </head>
 <body>
- <form>
-    <div class="row">
-      <div class="large-12 columns">
-        <label><h1> What are your symptoms?</h1></label>
-        <input type="text" placeholder="Insert symptom here" />
-      </div>
-    </div>
-</form>
-<div class="all-tools">
-        <div class="title">
-            <div class="large-12 large-centered columns">
-                <h1 class="What ills you? "></h1>
-            </div>
-        </div>
+<div id="wrapper"
+     <form>
         <div class="row">
-            <div class="large-6 medium-4 small-2 columns">
-                <div class="callout panel">
-                    <h2 class>Guaifenesin</span></h1>
-                        <img src="images/guaif.png" img id="chemical">
-                    <p><b><i>Cough congestant.</i></b></p>
-                    <p> Good for: runny noses and viral infections that affect nose, throat, and airways. Helps reduce cough congestion.</p>
-                    <p></p>
-                </div>
-            </div>
-            <div class="large-6 medium-4 small-2 columns">
-                <div class="callout panel">
-                    <h2 class>Dextromethorphan HBr</h1>
-                        <img src="images/dextro.png" img id="chemical">
-                    <p><b><i>Cough suppressant</p></b></i>
-                    <p> Good for: temporarily relieving coughs caused by minor throat irritation </p>
-                </div>
-            </div>
+          <div class="large-12 columns">
+            <label><h1> What are your symptoms?</h1></label>
+            <input type="text" placeholder="Insert here, separating each symptom with commas (ex: cough, runny nose)" />
+          </div>
         </div>
+    </form>
+    <div class="all-tools">
+            <div class="title">
+                <div class="large-12 large-centered columns">
+                    <h1 class="What ills you? "></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-6 medium-4 small-2 columns">
+                    <div class="callout panel" id="flipcard">
+                        <div class="front">
+                            <h2 class>Guaifenesin</span></h1>
+                                <img src="images/guaif.png" img id="chemical">
+                            <p><b><i>Cough congestant.</i></b></p>
+                            <p> Good for: runny noses and viral infections that affect nose, throat, and airways. Helps reduce cough congestion.</p>
+                            <p></p>
+                        </div>
+                        <div class="back">
+                            <p> <b> Science stuff here </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis quam lobortis erat sodales, a convallis elit cursus. Nullam efficitur nec dolor ut aliquam. Duis semper odio eget convallis congue. Duis luctus augue in magna vestibulum ullamcorper non et dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque f</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="large-6 medium-4 small-2 columns">
+                    <div class="callout panel">
+                        <h2 class>Dextromethorphan HBr</h1>
+                            <img src="images/dextro.png" img id="chemical">
+                        <p><b><i>Cough suppressant</p></b></i>
+                        <p> Good for: temporarily relieving coughs caused by minor throat irritation </p>
+                    </div>
+                </div>
+                <div class="large-6 medium-4 small-2 columns">
+                    <div class="callout panel">
+                        <h2 class>Chicken Noodle Soup</h1>
+                            <img src="images/dextro.png" img id="chemical">
+                        <p><b><i>(What it does/treats)</p></b></i>
+                        <p> Good for: </p>
+                    </div>
+                </div>
+                <div class="large-6 medium-4 small-2 columns">
+                    <div class="callout panel">
+                        <h2 class>Neti pot</h1>
+                            <img src="images/icons/noun_26010_cc.png" img id="viz">
+                        <p><b><i>(What it does/treats)</p></b></i>
+                        <p> Good for: </p>
+                    </div>
+                </div>
+            </div>
+    </div>
 </div>
 <!-- JavaScript-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/flippant.min.js"></script>    
+    <script type="text/javascript" src="js/flippant.min.js"></script>   
+    <script type="text/javascript" src="js/jquery.flip.min.js"></script>  
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>  
+    <script type="text/javascript" src="js/original.js"></script>
 </body>
 </html>

@@ -10,6 +10,34 @@ div.all-tools {
 }
 
 img#chemical {
-	width: 40%;
+	width: 20%;
 	height: 20%;
 }
+
+img#viz {
+	width: 30%;
+	height: 30%;
+}
+
+div.callout-panel {
+	padding: 15px;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+/*#wrapper {
+    width: 80%;
+    height: auto;
+    min-height: 100%;
+    margin-left: 10%;
+}
+*/
+/*@media (min-width: 1200px) {
+    #wrapper {
+        width: 1000px;
+        right: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}*/
