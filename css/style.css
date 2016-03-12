@@ -17,6 +17,10 @@ div.wrapper {
     }
 }
 
+#flipcard p {
+	font-size: 14px;
+}
+
 /*#buttongroup {
 	margin-left: 14%;
 margin-left: 5%;
@@ -26,10 +30,6 @@ margin-left: 5%;
 	margin-left: 10%;
 	margin-right: 14%;
 }*/
-
-#flipcard p {
-	font-size: 14px;
-}
 
 /*.element-item {
   position: relative;
@@ -133,9 +133,9 @@ div.callout.panel {
 	border-color: #f3f3f3;*/
 }
 
-div.all-tools {
+/*div.all-tools {
 	text-align: center;
-}
+}*/
 
 img#chemical {
 	width: 20%;
@@ -147,18 +147,13 @@ img#viz {
 	height: 30%;
 }
 
-div.callout-panel {
+/*div.callout-panel {
 	padding: 15px;
 	border-radius: 4px;
 	margin-bottom: 20px;
-}
+}*/
 
-div.openingheader h1 {
-	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 30px;
-}
-
+/*For the introduction paragraphs*/
 div.openingheader p{
 	height: auto;
 	width: 60%;
