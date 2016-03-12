@@ -1,3 +1,27 @@
+/*Isotope stuff*/
+div.grid-item { width: 25%; }
+div.grid-item--width2 { width: 50%; }
+
+
+#buttongroup {
+	margin-left: 14%;
+	font-family: Salvo;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Everything before isotope*/
 div.callout.panel {
 	text-align: center;
 	border-radius: 10px;
@@ -25,30 +49,11 @@ div.callout-panel {
 	margin-bottom: 20px;
 }
 
-div#flipcard {
-	position: absolute;
-	z-index: 99 !important ;
-	background-color: #effafe;
-	border-radius: 5px;
-	padding: 15px;
-	margin-bottom: 20px;
-	display: block;
-}
-
 div.openingheader h1 {
 	text-align: center;
 	margin-top: 20px;
 	margin-bottom: 30px;
 }
-
-/*div.openingheader p{
-	height: auto;
-	width: 60%;
-	min-height: 100%;
-	margin-left: 20%;
-	font-family: Georgia;
-	font-size: 18px;
-}*/
 
 div.openingheader p{
 	height: auto;
@@ -59,9 +64,46 @@ div.openingheader p{
 	font-size: 16px;
 }
 
+/*For the opening banner img*/
 div.openingheader p#name {
 	text-align: center;
 }
+
+/*For the flipcard p text sizes*/
+div.row p{
+	font-size: 13px;
+}
+
+/*For the flipcard header text size*/
+div.row h2 {
+	font-size: 30px;
+}
+
+
+
+
+
+
+
+/*
+div#flipcard {
+	position: absolute;
+	z-index: 99 !important ;
+	background-color: #effafe;
+	border-radius: 5px;
+	padding: 15px;
+	margin-bottom: 20px;
+	display: block;
+}*/
+
+/*div.openingheader p{
+	height: auto;
+	width: 60%;
+	min-height: 100%;
+	margin-left: 20%;
+	font-family: Georgia;
+	font-size: 18px;
+}*/
 
 /*img#block {
 	margin-top: 80px;
@@ -82,4 +124,4 @@ div.openingheader p#name {
         margin-left: auto;
         margin-right: auto;
     }
-}*/
+}
