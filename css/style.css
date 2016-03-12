@@ -37,7 +37,7 @@ div#flipcard {
 
 div.openingheader h1 {
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 20px;
 	margin-bottom: 30px;
 }
 
@@ -62,6 +62,10 @@ div.openingheader p{
 div.openingheader p#name {
 	text-align: center;
 }
+
+/*img#block {
+	margin-top: 80px;
+}*/
 
 /*#wrapper {
     width: 80%;
