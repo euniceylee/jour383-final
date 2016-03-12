@@ -16,8 +16,8 @@
 </head>
 <body>
     <div class="openingheader">
-        <img id="block" src="images/title.png"></img>
-        <h1> What actually treats your cold?</h1>
+        <img id="block" src="images/bannerimage.jpg"></img>
+        <p></p>
         <p id="name"> By <a href="www.twitter.com/euniceyounglee">Eunice Lee</a></p>
         <p>The process of buying over-the-counter cold medication at a local CVS can be dizzying. How can there be five types of Sudafed, five types of Mucinex, and four kinds of DayQuil and NyQuil all in one shelf? How do you know if you need DayQuil Severe Cold and Flu or just the regular kind? What makes certain cold medication drowsy? What’s the difference between cough syrup and pills? After much deliberation, you end up buying and consuming a cocktail of drugs that you hope will work. </p>
         <p>This is a problem, and even I’ve been victim to it. When I first got sick in college and didn’t have any medicine on hand, I texted my sister (who works in the pharmaceutical industry) and asked for her advice. She texted back, “Look for guaifenesin.” I thought she meant the name of a company, but she actually meant the active ingredient in some cold medications that helps runny noses. “Don’t you read the drug label?” she asked me. When I told her no, she immediately replied, “Then how do you know which medicine is right for you?” She had a point. I tended to gravitate towards brands that sounded familiar and, therefore, legitimate. I looked down at the CVS or Walmart versions of cough syrup, even though they were several dollars cheaper. Really, I was an uneducated consumer. I think a lot of people are. </p> 
@@ -36,15 +36,58 @@
     <!-- Start messing with shit from here -->
     <div class="button-group filter-button-group" div id="buttongroup">
         <div class="large-12 columns">
+            <button data-filter="*">show all</button>
             <button data-filter=".cough">cough</button>
-            <button data-filter=".nose">runny nose</button>
-            <button data-filter=".congested">congested nose</button>
+            <button data-filter=".nose">runny/congested nose</button>
             <button data-filter=".fever">fever</button>
             <button data-filter=":not(.transition)">sneezing</button>
             <button data-filter=":not(.transition)">body aches/pain</button>
+            <button data-filter=":not(.transition)">sore throat</button>
         </div>
     </div>
 
+    <div class="grid">
+      <div class="element-item transition metal " data-category="transition">
+        <div class="large-6 medium-4 small-2 columns">
+            <div class="callout panel" id="flipcard">
+                <h3 class="name">Guaifenesin</h3>
+                <p class="positives">Good for: runny noses and reducing cough congestion.</p>
+                <p class="science">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis quam lobortis erat sodales, a convallis elit cursus. Nullam efficitur nec dolor ut aliquam. Duis semper odio eget convallis congue. Duis luctus augue in magna vestibulum ullamcorper non et dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
+                <p class="warnings">Not suited for asthma</p>
+            </div>
+        </div>
+      </div>
+      <div class="element-item transition metal " data-category="transition">
+        <div class="large-6 medium-4 small-2 columns">
+            <div class="callout panel" id="flipcard">
+                <h3 class="name">Phenylephrine</h3>
+                <p class="positives">Good for: nasal decongestant</p>
+                <p class="science">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis quam lobortis erat sodales, a convallis elit cursus. Nullam efficitur nec dolor ut aliquam. Duis semper odio eget convallis congue. Duis luctus augue in magna vestibulum ullamcorper non et dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
+                <p class="warnings">Not suited for asthma</p>
+            </div>
+        </div>
+      </div>
+      <div class="element-item transition metal " data-category="transition">
+        <div class="large-6 medium-4 small-2 columns">
+            <div class="callout panel" id="flipcard">
+                <h3 class="name">Acetaminophen </h3>
+                <p class="body">Good for: pain reliever and fever reducer</p>
+                <p class="science">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis quam lobortis erat sodales, a convallis elit cursus. Nullam efficitur nec dolor ut aliquam. Duis semper odio eget convallis congue. Duis luctus augue in magna vestibulum ullamcorper non et dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
+                <p class="warnings">Not suited for asthma</p>
+            </div>
+        </div>
+      </div>
+      <div class="element-item transition metal " data-category="transition">
+        <div class="large-6 medium-4 small-2 columns">
+            <div class="callout panel" id="flipcard">
+                <h3 class="name">Dextromethorphan HBr</h3>
+                <p class="mouth">Good for: Cough suppressant</p>
+                <p class="science">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis quam lobortis erat sodales, a convallis elit cursus. Nullam efficitur nec dolor ut aliquam. Duis semper odio eget convallis congue. Duis luctus augue in magna vestibulum ullamcorper non et dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
+                <p class="warnings">Not suited for asthma</p>
+            </div>
+        </div>
+      </div>
+    </div>
 
    <!--  <div class="grid">
         <div class="element-item transition metal">...</div>
@@ -55,11 +98,6 @@
         <div class="element-item halogen nonmetal">...</div>
         <div class="element-item alkaline-earth metal">...</div>
     </div> -->
-
-
-
-
-
 
 
     <!-- <div class="all-tools">
@@ -122,7 +160,7 @@
     <script type="text/javascript" src="js/original.js"></script>
 
 <!-- Footer -->
- <footer>
+ <!-- <footer>
     <div class="about-knightlab">
       <div id="knightlab-logo-column">
         <a href="http://knightlab.northwestern.edu" target="_blank"><img src="http://knightlab.northwestern.edu/wp-content/uploads/2014/12/logo_stacked.png" class="img-responsive"></a>
@@ -156,8 +194,8 @@
         </address>
         <span class="copyright">| Copyright 2015, Northwestern University</span>
       </div>
-    </div><!-- end .about-knightlab -->
-  </footer>
+    </div>
+  </footer> -->
 
 </body>
 </html>
