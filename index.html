@@ -13,6 +13,8 @@
     <!-- Optional: Knight Lab webfonts -->
     <link href="//cloud.webtype.com/css/d4767ecb-457a-4677-8761-72f890add836.css" rel=
     "stylesheet" type="text/css">
+    <!-- Emoji stylesheet -->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 </head>
 <body>
     <div class="openingheader">
@@ -27,7 +29,7 @@
     <form>
         <div class="row">
           <div class="large-12 columns">
-            <label><h2> What are your symptoms?</h2></label> 
+            <label><h2> What are your symptoms?</label> <h2>
             <!-- This was for the search bar form -->
             <!-- <input type="text" placeholder="Insert here, separating each symptom with commas (ex: cough, runny nose)" /> -->
           </div>
@@ -38,11 +40,11 @@
         <div class="button-group filter-button-group" div id="buttongroup">
             <!-- <div class="large-12 columns"> -->
                 <button data-filter="*">show all</button>
-                <button data-filter=".cough">cough</button>
-                <button data-filter=".nose">runny/congested nose</button>
-                <button data-filter=".fever">fever</button>
-                <button data-filter=":not(.transition)">sneezing</button>
-                <button data-filter=":not(.transition)">sore throat</button>
+                <button data-filter=".cough">cough<i class="em em-mask"></i></button>
+                <button data-filter=".nose">runny/congested nose<i class="em em-nose"></i></button>
+                <button data-filter=".fever">fever<i class="em em-fire"></i></button>
+                <button data-filter=":not(.transition)">sneezing<i class="em em-astonished"></i></button>
+                <button data-filter=":not(.transition)">sore throat<i class="em em-collision"></i></button>
             <!-- </div> -->
         </div>
 
