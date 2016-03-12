@@ -25,6 +25,44 @@ div.callout-panel {
 	margin-bottom: 20px;
 }
 
+div#flipcard {
+	position: absolute;
+	z-index: 99 !important ;
+	background-color: #effafe;
+	border-radius: 5px;
+	padding: 15px;
+	margin-bottom: 20px;
+	display: block;
+}
+
+div.openingheader h1 {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+/*div.openingheader p{
+	height: auto;
+	width: 60%;
+	min-height: 100%;
+	margin-left: 20%;
+	font-family: Georgia;
+	font-size: 18px;
+}*/
+
+div.openingheader p{
+	height: auto;
+	width: 60%;
+	min-height: 100%;
+	margin-left: 20%;
+	font-family: Georgia;
+	font-size: 16px;
+}
+
+div.openingheader p#name {
+	text-align: center;
+}
+
 /*#wrapper {
     width: 80%;
     height: auto;

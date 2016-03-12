@@ -15,11 +15,17 @@
     "stylesheet" type="text/css">
 </head>
 <body>
-<div id="wrapper"
-     <form>
+<div id="wrapper">
+    <div class="openingheader">
+        <h1> What's on those drug labels anyway? </h1>
+        <p id="name"> By <a href="www.twitter.com/euniceyounglee">Eunice Lee</a></p>
+        <p>The process of buying over-the-counter cold medication at a local CVS can be dizzying. How can there be five types of Sudafed, five types of Mucinex, and four kinds of DayQuil and NyQuil all in one shelf? How do you know if you need DayQuil Severe Cold and Flu or just the regular kind? What makes certain cold medication drowsy? What’s the difference between cough syrup and pills? After much deliberation, you end up buying and consuming a cocktail of drugs that you hope will work. </p>
+        <p>This is a problem, and even I’ve been victim to it. When I first got sick in college and didn’t have any medicine on hand, I texted my sister (who works in the pharmaceutical industry) and asked for her advice. She texted back, “Look for guaifenesin.” I thought she meant the name of a company, but she actually meant the active ingredient in some cold medications that helps runny noses. “Don’t you read the drug label?” she asked me. When I told her no, she immediately replied, “Then how do you know which medicine is right for you?” She had a point. I tended to gravitate towards brands that sounded familiar and, therefore, legitimate. I looked down at the CVS or Walmart versions of cough syrup, even though they were several dollars cheaper. Really, I was an uneducated consumer. I think a lot of people are. </p> 
+    </div>
+    <form>
         <div class="row">
           <div class="large-12 columns">
-            <label><h1> What are your symptoms?</h1></label>
+            <label><h2> What are your symptoms?</h2></label>
             <input type="text" placeholder="Insert here, separating each symptom with commas (ex: cough, runny nose)" />
           </div>
         </div>
@@ -27,17 +33,17 @@
     <div class="all-tools">
             <div class="title">
                 <div class="large-12 large-centered columns">
-                    <h1 class="What ills you? "></h1>
                 </div>
             </div>
             <div class="row">
                 <div class="large-6 medium-4 small-2 columns">
-                    <div class="callout panel" id="flipcard">
+                    <!-- <div class="callout panel" id="flipcard"> -->
+                    <div id="flipcard">
                         <div class="front">
                             <h2 class>Guaifenesin</span></h1>
                                 <img src="images/guaif.png" img id="chemical">
                             <p><b><i>Cough congestant.</i></b></p>
-                            <p> Good for: runny noses and viral infections that affect nose, throat, and airways. Helps reduce cough congestion.</p>
+                            <p> Good for: runny noses and reducing cough congestion.</p>
                             <p></p>
                         </div>
                         <div class="back">
@@ -45,7 +51,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="large-6 medium-4 small-2 columns">
+                <!-- <div class="large-6 medium-4 small-2 columns">
                     <div class="callout panel">
                         <h2 class>Dextromethorphan HBr</h1>
                             <img src="images/dextro.png" img id="chemical">
@@ -69,7 +75,7 @@
                         <p> Good for: </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
     </div>
 </div>
 <!-- JavaScript-->

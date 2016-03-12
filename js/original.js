@@ -1,1 +1,1 @@
-// $("#flipcard").flip();
+$("#flipcard").flip();
