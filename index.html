@@ -6,6 +6,8 @@
     <meta content="Eunice Lee" name="author">
     <link href="css/style.css" rel="stylesheet">
     <title>A Cocktail of Cold Medication</title>
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
     <!-- Purple Line CSS -->
     <link href="//cdn.knightlab.com/libs/purpleline/latest/css/purpleline.min.css" rel=
     "stylesheet" type="text/css">
@@ -21,15 +23,18 @@
         <img id="block" src="images/bannerimage.jpg"></img>
         <p></p>
         <p id="name"> By <a href="https://twitter.com/euniceyounglee">Eunice Lee</a></p>
-        <p>The process of buying over-the-counter cold medication at a local CVS can be dizzying. How can there be five types of Sudafed, five types of Mucinex, and four kinds of DayQuil and NyQuil all in one shelf? How do you know if you need DayQuil Severe Cold and Flu or just the regular kind? What makes certain cold medication drowsy? What’s the difference between cough syrup and pills? After much deliberation, you end up buying and consuming a cocktail of drugs that you hope will work. </p>
-        <p>This is a problem, and even I’ve been victim to it. When I first got sick in college and didn’t have any medicine on hand, I texted my sister (who works in the pharmaceutical industry) and asked for her advice. She texted back, “Look for guaifenesin.” I thought she meant the name of a company, but she actually meant the active ingredient in some cold medications that helps runny noses. “Don’t you read the drug label?” she asked me. When I told her no, she immediately replied, “Then how do you know which medicine is right for you?” She had a point. I tended to gravitate towards brands that sounded familiar and, therefore, legitimate. I looked down at the CVS or Walmart versions of cough syrup, even though they were several dollars cheaper. Really, I was an uneducated consumer. I think a lot of people are. </p> 
+        <p>The process of buying over-the-counter cold medication at a local pharmacy can be dizzying. How can there be five types of Sudafed, six types of Mucinex, and four kinds of DayQuil and NyQuil all in one shelf? Meanwhile, big, bold words like, “congestion” and “severe cold” only make your runny nose feel stuffier and unbearable. 
+        <p> OTC cough and cold medications are widely marketed in the United States and remain a widespread modality for treating the common cold. According to a <a href="http://www.ncbi.nlm.nih.gov/pubmed/18676518/">2008 study </a>posted on the Federal Drug Association website, BeMedWise.org, 86 percent of 1,000 parents reported that they would use an over-the-counter (OTC) medication prior to or instead of consulting a pediatrician. OTC medication use in young children and adults remain a widespread modality for treating the common cold. </p> 
+        <p>But how many of us actually check the drug label? And how do you know what really works?</p>
+        <p>Not all OTC cold and cough medications are created the same. Some have fever reducers; some only relieve nasal decongestion. All of the details are technically explained in the drug label, but it can seem like a foreign language. The FDA requires that all OTC drug product labeling contain the title, active ingredient(s), use(s), warning(s), inactive ingredients, purpose, directions, and other information. But it’s debatable whether consumers read and fully understand the drug label before buying products. In a 2002 national survey of consumers and health professionals by the National Council on Patient Information and Education, results found that seven in ten medical professionals – 69 percent - felt that a lack of knowledge about active ingredients contributes a lot or a great deal to inappropriate use. </p>
+        <p>In an effort to encourage more familiarity with drug labels, below is a database of commonly found active ingredients in OTC cold medications. In addition, scientifically supported folk renditions that help ease cold symptoms. </p>
     </div>
     <!-- Title and Search Bar -->
     <div class="wrapper">
     <form>
         <div class="row">
           <div class="large-12 columns">
-            <label><h2> What are your symptoms?</label> <h2>
+            <h2> What are your symptoms?</h2>
             <!-- This was for the search bar form -->
             <!-- <input type="text" placeholder="Insert here, separating each symptom with commas (ex: cough, runny nose)" /> -->
           </div>
@@ -37,85 +42,84 @@
     </form>
     <!-- Start messing with shit from here -->
     <div class="wrapper"
-        <div class="filter-button-group" div id="buttongroup">
+        <div class="button-group filters-button-group" div id="buttongroup">
             <!-- <div class="large-12 columns"> -->
-                <button data-filter="*">show all</button>
-                <button data-filter=".cough">cough<i class="em em-mask"></i></button>
-                <button data-filter=".nose">runny/congested nose<i class="em em-nose"></i></button>
-                <button data-filter=".fever">fever<i class="em em-fire"></i></button>
-                <button data-filter=".sneeze">sneezing<i class="em em-astonished"></i></button>
-                <button data-filter=".sorethroat">sore throat<i class="em em-collision"></i></button>
-            <!-- </div> -->
+                <button class="button is-checked" data-filter="*">show all</button>
+                <button class="button" data-filter=".cough">cough<i class="em em-mask"></i></button>
+                <button class="button" data-filter=".nose">runny/congested nose<i class="em em-nose"></i></button>
+                <button class="button" data-filter=".fever">fever<i class="em em-fire"></i></button>
+                <button class="button" data-filter=".sneeze">sneezing<i class="em em-astonished"></i></button>
+                <button class="button" data-filter=".sorethroat">sore throat<i class="em em-collision"></i></button>
         </div>
 
         <div class="grid">
-          <div class="element-item nose-group" data-category="transition">
-            <div class="large-6 medium-4 small-2 columns">
-                <div class="callout panel" id="flipcard">
-                    <h3 class="name">Guaifenesin</h3>
+          <div class="element-item nose" data-category="nose">
+           <!--  <div class="large-6 medium-4 small-2 columns">
+                <div class="callout panel" id="flipcard"> -->
+                    <h3 class="name">Guaifenesin <img src="images/chemicals/guaif.png" img id="chemical"></h3>
                     <p class="nose">Good for: runny noses and reducing cough congestion.</p>
                     <p class="science">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis quam lobortis erat sodales, a convallis elit cursus. Nullam efficitur nec dolor ut aliquam. Duis semper odio eget convallis congue. Duis luctus augue in magna vestibulum ullamcorper non et dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
                     <p class="warnings">Not suited for asthma</p>
-                </div>
-            </div>
+         <!--        </div>
+            </div> -->
           </div>
-          <div class="element-item nose-group" data-category="transition">
-            <div class="large-6 medium-4 small-2 columns">
-                <div class="callout panel" id="flipcard">
-                    <h3 class="name">Phenylephrine</h3>
+          <div class="element-item nose" data-category="nose">
+     <!--        <div class="large-6 medium-4 small-2 columns">
+                <div class="callout panel" id="flipcard"> -->
+                    <h3 class="name">Phenylephrine<img src="images/chemicals/phen.png" img id="chemical"></h3>
                     <p class="nose">Good for: nasal decongestant</p>
                     <p class="science">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis quam lobortis erat sodales, a convallis elit cursus. Nullam efficitur nec dolor ut aliquam. Duis semper odio eget convallis congue. Duis luctus augue in magna vestibulum ullamcorper non et dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
                     <p class="warnings">Not suited for asthma</p>
-                </div>
-            </div>
+          <!--       </div>
+            </div> -->
           </div>
-          <div class="element-item transition metal " data-category="transition">
-            <div class="large-6 medium-4 small-2 columns">
-                <div class="callout panel" id="flipcard">
-                    <h3 class="name">Acetaminophen </h3>
+          <div class="element-item fever" data-category="fever">
+            <!-- <div class="large-6 medium-4 small-2 columns">
+                <div class="callout panel" id="flipcard"> -->
+                    <h3 class="name">Acetaminophen<img src="images/chemicals/acefinal.png" img id="chemical"></h3>
                     <p class="body">Good for: pain reliever and fever reducer</p>
                     <p class="science">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis quam lobortis erat sodales, a convallis elit cursus. Nullam efficitur nec dolor ut aliquam. Duis semper odio eget convallis congue. Duis luctus augue in magna vestibulum ullamcorper non et dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
                     <p class="warnings">Not suited for asthma</p>
-                </div>
-            </div>
+                <!-- </div>
+            </div> -->
           </div>
-          <div class="element-item transition metal " data-category="transition">
-            <div class="large-6 medium-4 small-2 columns">
-                <div class="callout panel" id="flipcard">
-                    <h3 class="name">Dextromethorphan HBr</h3>
+          <div class="element-item cough" data-category="cough">
+         <!--    <div class="large-6 medium-4 small-2 columns">
+                <div class="callout panel" id="flipcard"> -->
+                    <h3 class="name">Dextromethorphan HBr<img src="images/chemicals/dextro.png" img id="chemical"></h3>
                     <p class="mouth">Good for: Cough suppressant</p>
                     <p class="science">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis quam lobortis erat sodales, a convallis elit cursus. Nullam efficitur nec dolor ut aliquam. Duis semper odio eget convallis congue. Duis luctus augue in magna vestibulum ullamcorper non et dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
                     <p class="warnings">Not suited for asthma</p>
-                </div>
-            </div>
+          <!--       </div>
+            </div> -->
           </div>
-          <div class="element-item transition metal " data-category="transition">
-            <div class="large-6 medium-4 small-2 columns">
-                <div class="callout panel" id="flipcard">
-                    <h3 class="name">Honey</h3>
+          <div class="element-item throat" data-category="throat">
+            <!-- <div class="large-6 medium-4 small-2 columns">
+                <div class="callout panel" id="flipcard"> -->
+                    <h3 class="name">Honey<img src="images/icons/noun_260277_cc.png" img id="chemical"></h3>
                     <p class="positives">Good for: sore throats and cough suppressant</p>
                     <p class="science">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis quam lobortis erat sodales, a convallis elit cursus. Nullam efficitur nec dolor ut aliquam. Duis semper odio eget convallis congue. Duis luctus augue in magna vestibulum ullamcorper non et dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
                     <p class="warnings">Not suited for asthma</p>
-                </div>
-            </div>
+             <!--    </div>
+            </div> -->
           </div>
-          <div class="element-item nose-group" data-category="transition">
-            <div class="large-6 medium-4 small-2 columns">
-                <div class="callout panel" id="flipcard">
-                    <h3 class="name">Neti Pot</h3>
+          <div class="element-item nose" data-category="nose">
+            <!-- <div class="large-6 medium-4 small-2 columns">
+                <div class="callout panel" id="flipcard"> -->
+                    <h3 class="name">Neti Pot<img src="images/icons/noun_203003_cc.png" img id="chemical"></h3>
                     <p class="nose">Good for: runny noses and nasal decongestaion</p>
                     <p class="science">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis quam lobortis erat sodales, a convallis elit cursus. Nullam efficitur nec dolor ut aliquam. Duis semper odio eget convallis congue. Duis luctus augue in magna vestibulum ullamcorper non et dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
-                </div>
-            </div>
+                <!-- </div>
+            </div> -->
           </div>
-          <div class="element-item nose-group" data-category="transition">
-            <div class="large-6 medium-4 small-2 columns">
-                <div class="callout panel" id="flipcard">
-                    <h3 class="name">Doxylamine succinate</h3>
+          <div class="element-item sneeze" data-category="sneeze">
+          <!--   <div class="large-6 medium-4 small-2 columns">
+                <div class="callout panel" id="flipcard"> -->
+                    <h3 class="name">Doxylamine succinate<img src="images/chemicals/doxyfinal.gif" img id="chemical"></h3>
                     <p class="nose">Good for: sneezes and allergies</p>
                     <p class="science">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis quam lobortis erat sodales, a convallis elit cursus. Nullam efficitur nec dolor ut aliquam. Duis semper odio eget convallis congue. Duis luctus augue in magna vestibulum ullamcorper non et dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
-                </div>
-            </div>
+            <!--     </div>
+            </div> -->
           </div>
         </div>
     </div>
