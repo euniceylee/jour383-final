@@ -1,4 +1,4 @@
-// $("#flipcard").flip();
+$("#flipcard").flip();
 
 $( function() {
   // init Isotope
@@ -6,7 +6,7 @@ $( function() {
     itemSelector: '.element-item',
     layoutMode: 'masonry'
   });
-  
+
   // If you only wanna filter nose then use the call below
   // $grid.isotope({ filter: '.nose' })
 

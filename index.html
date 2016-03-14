@@ -21,27 +21,24 @@
 <body>
     <div class="openingheader">
         <img id="block" src="images/bannerimage.jpg"></img>
-        <p></p>
+        <p class="imageattribute"> Dima Sobko / Shutterstock</p>
         <p id="name"> By <a href="https://twitter.com/euniceyounglee">Eunice Lee</a></p>
         <p>The process of buying over-the-counter cold medication at a local pharmacy can be dizzying. How can there be five types of Sudafed, six types of Mucinex, and four kinds of DayQuil and NyQuil all in one shelf? Meanwhile, big, bold words like, “congestion” and “severe cold” only make your runny nose feel stuffier and unbearable. 
-        <p> OTC cough and cold medications are widely marketed in the United States and remain a widespread modality for treating the common cold. According to a <a href="http://www.ncbi.nlm.nih.gov/pubmed/18676518/">2008 study </a>posted on the Federal Drug Association website, BeMedWise.org, 86 percent of 1,000 parents reported that they would use an over-the-counter (OTC) medication prior to or instead of consulting a pediatrician. OTC medication use in young children and adults remain a widespread modality for treating the common cold. </p> 
-        <p>But how many of us actually check the drug label? And how do you know what really works?</p>
-        <p>Not all OTC cold and cough medications are created the same. Some have fever reducers; some only relieve nasal decongestion. All of the details are technically explained in the drug label, but it can seem like a foreign language. The FDA requires that all OTC drug product labeling contain the title, active ingredient(s), use(s), warning(s), inactive ingredients, purpose, directions, and other information. But it’s debatable whether consumers read and fully understand the drug label before buying products. In a 2002 national survey of consumers and health professionals by the National Council on Patient Information and Education, results found that seven in ten medical professionals – 69 percent - felt that a lack of knowledge about active ingredients contributes a lot or a great deal to inappropriate use. </p>
-        <p>In an effort to encourage more familiarity with drug labels, below is a database of commonly found active ingredients in OTC cold medications. In addition, scientifically supported folk renditions that help ease cold symptoms. </p>
+        <p> OTC cough and cold medications are widely marketed in the United States and remain a widespread modality for treating the common cold. According to a <a href="http://www.ncbi.nlm.nih.gov/pubmed/18676518/">2008 study </a>posted on the Federal Drug Association website, BeMedWise.org, 86 percent of 1,000 parents reported that they would use an over-the-counter (OTC) medication prior to or instead of consulting a pediatrician. To no surprise, OTC medication remains a widespread modality for treating symptoms of the common cold. </p> 
+        <p>But how many of us actually check the drug labels of our medicine? And how do you know what really works?</p>
+        <p>Not all OTC cold and cough medications are created the same. Some have fever reducers; some only relieve nasal decongestion. The FDA requires that all OTC drug product labeling contain the title, active ingredient(s), use(s), warning(s), inactive ingredients, purpose, directions, and other information. All of the details are technically explained in the drug label, but it can seem like a foreign language. It is also debatable whether consumers read and fully understand the drug label before buying products. In a <a href="http://www.bemedwise.org/survey/final_survey.pdf">2002 national survey </a>of consumers and health professionals by the National Council on Patient Information and Education, results found that seven in ten medical professionals – 69 percent - felt that a lack of knowledge about active ingredients contributed a great deal to inappropriate use. </p>
+        <p>In an effort to make drug labels less daunting and more familiar, below is a database of commonly found active ingredients in OTC cold medications. In addition, folk renditions that help ease cold symptoms. This database is by no means exhaustive. However, it only includes products that have been scientifically supported to alleviate cold symptoms. </p>
     </div>
-    <!-- Title and Search Bar -->
-    <div class="wrapper">
-    <form>
+<!--     <div class="wrapper"> -->
+<!--     <form> -->
         <div class="row">
           <div class="large-12 columns">
             <h2> What are your symptoms?</h2>
-            <!-- This was for the search bar form -->
-            <!-- <input type="text" placeholder="Insert here, separating each symptom with commas (ex: cough, runny nose)" /> -->
           </div>
         </div>
-    </form>
+<!--     </form> -->
     <!-- Start messing with shit from here -->
-    <div class="wrapper"
+    <div class="wrapper">
         <div class="button-group filters-button-group" div id="buttongroup">
             <!-- <div class="large-12 columns"> -->
                 <button class="button is-checked" data-filter="*">show all</button>
@@ -57,9 +54,11 @@
            <!--  <div class="large-6 medium-4 small-2 columns">
                 <div class="callout panel" id="flipcard"> -->
                     <h3 class="name">Guaifenesin <img src="images/chemicals/guaif.png" img id="chemical"></h3>
+                    <audio controls>
+                        <source src="sounds/gsound.m4a"></audio>
                     <p class="nose">Good for: runny noses and reducing cough congestion.</p>
-                    <p class="science">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis quam lobortis erat sodales, a convallis elit cursus. Nullam efficitur nec dolor ut aliquam. Duis semper odio eget convallis congue. Duis luctus augue in magna vestibulum ullamcorper non et dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
-                    <p class="warnings">Not suited for asthma</p>
+                    <p class="science">Dextromethorphan (DXM) is a safe and effective ingredient found in more than 100 over-the-counter (OTC) cough and cold medicines. First approved by the U.S. Food and Drug Administration (FDA) in the 1950s, it is an effective, non-narcotic cough suppressant that works by raising the coughing threshold in the brain. It has no pain-relieving properties and is not addictive.</p>
+                    <p class="warnings"><i class="em em-heavy_exclamation_mark"></i>Not recommended for individuals with cystic fibrosis, asthma, or COPD </p>
          <!--        </div>
             </div> -->
           </div>
@@ -93,10 +92,19 @@
           <!--       </div>
             </div> -->
           </div>
+          <div class="element-item sneeze" data-category="sneeze">
+          <!--   <div class="large-6 medium-4 small-2 columns">
+                <div class="callout panel" id="flipcard"> -->
+                    <h3 class="name">Doxylamine succinate<img src="images/chemicals/doxyfinal.gif" img id="chemical"></h3>
+                    <p class="nose">Good for: sneezes and allergies</p>
+                    <p class="science">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis quam lobortis erat sodales, a convallis elit cursus. Nullam efficitur nec dolor ut aliquam. Duis semper odio eget convallis congue. Duis luctus augue in magna vestibulum ullamcorper non et dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
+            <!--     </div>
+            </div> -->
+          </div>
           <div class="element-item throat" data-category="throat">
             <!-- <div class="large-6 medium-4 small-2 columns">
                 <div class="callout panel" id="flipcard"> -->
-                    <h3 class="name">Honey<img src="images/icons/noun_260277_cc.png" img id="chemical"></h3>
+                    <h3 class="name">Chicken Noodle Soup<img src="images/icons/noun_99693_cc.png" img id="chemical"></h3>
                     <p class="positives">Good for: sore throats and cough suppressant</p>
                     <p class="science">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis quam lobortis erat sodales, a convallis elit cursus. Nullam efficitur nec dolor ut aliquam. Duis semper odio eget convallis congue. Duis luctus augue in magna vestibulum ullamcorper non et dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
                     <p class="warnings">Not suited for asthma</p>
@@ -110,15 +118,6 @@
                     <p class="nose">Good for: runny noses and nasal decongestaion</p>
                     <p class="science">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis quam lobortis erat sodales, a convallis elit cursus. Nullam efficitur nec dolor ut aliquam. Duis semper odio eget convallis congue. Duis luctus augue in magna vestibulum ullamcorper non et dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
                 <!-- </div>
-            </div> -->
-          </div>
-          <div class="element-item sneeze" data-category="sneeze">
-          <!--   <div class="large-6 medium-4 small-2 columns">
-                <div class="callout panel" id="flipcard"> -->
-                    <h3 class="name">Doxylamine succinate<img src="images/chemicals/doxyfinal.gif" img id="chemical"></h3>
-                    <p class="nose">Good for: sneezes and allergies</p>
-                    <p class="science">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis quam lobortis erat sodales, a convallis elit cursus. Nullam efficitur nec dolor ut aliquam. Duis semper odio eget convallis congue. Duis luctus augue in magna vestibulum ullamcorper non et dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
-            <!--     </div>
             </div> -->
           </div>
         </div>
@@ -195,41 +194,13 @@
     <script type="text/javascript" src="js/original.js"></script>
 
 <!-- Footer -->
- <!-- <footer>
-    <div class="about-knightlab">
-      <div id="knightlab-logo-column">
-        <a href="http://knightlab.northwestern.edu" target="_blank"><img src="http://knightlab.northwestern.edu/wp-content/uploads/2014/12/logo_stacked.png" class="img-responsive"></a>
-        <ul class="contact-icons">
-          <li><a title="follow @knightlab on Twitter" href="http://www.twitter.com/knightlab"><i class="fa fa-twitter"></i></a></li>
-          <li><a title="Knight Lab on Facebook" href="//www.facebook.com/knightlab"><i class="fa fa-facebook"></i></a></li>
-          <li><a title="email Knight Lab" href="mailto:Knightlab@northwestern.edu"><i class="fa fa-envelope-o"></i></a></li>
-          <li><a title="Knight Lab on GitHub" href="//github.com/NUKnightLab/"><i class="fa fa-github-alt"></i></a></li>
-        </ul>
-      </div>
-      <div id="knightlab-description">
-        <p>The <a title="Northwestern University" href="http://www.northwestern.edu/" target="_blank">Northwestern University</a> Knight Lab is a team of technologists and journalists working at advancing news media innovation through exploration and experimentation.</p>
-        <p>A joint initiative of the <a href="http://www.mccormick.northwestern.edu/" target="_blank">Robert R. McCormick School of Engineering and Applied Science</a> and the<a href="http://www.medill.northwestern.edu/" target="_blank"> Medill School of Journalism, Media, Integrated Marketing Communications</a>.</p><img src="http://knightlab.northwestern.edu/wp-content/uploads/2014/12/Logos-Horizontal.png" class="img-responsive logos">
-      </div>
-      <div class="contact">
-        <address itemscope="" itemtype="http://data-vocabulary.org/Organization">
-          <span style="display:none;" itemprop="name" title="Knight Lab | Advancing news media innovation through exploration and experimentation." class="address-name">Knight Lab</span>
-          <span itemprop="tel" class="tel">(847) 467-4971 | </span>
-          <span itemprop="address" itemscope="" itemtype="http://data-vocabulary.org/Address" class="address">
-            <span itemprop="street-address" class="street-address"><a href="//maps.google.com/maps?q=1845+Sheridan+Road+Evanston+IL+6020&hl=en&ll=42.050942,-87.673511&spn=0.003059,0.004898&sll=42.050647,-87.674246&sspn=0.012237,0.019591&gl=us&hnear=1845+Sheridan+Rd,+Evanston,+Cook,+Illinois+60201&t=m&z=18&iwloc=A" target="_blank">1845 Sheridan Road Fisk #109 & #111</span>, 
-            <span itemprop="locality">Evanston,</span> 
-            <span itemprop="region">IL</span> 
-            <span itemprop="postal-code">60208 |</span> 
-            <span itemprop="country-name" class="address-country">United States</span>
-          </span>
-          <span style="display:none;" itemprop="geo" itemscope="" itemtype="http://www.data-vocabulary.org/Geo/" class="geo">
-            Latitude: <span itemprop="latitude">42.056893</span><br>
-            Longitude: <span itemprop="longitude">-87.676735</span>
-          </span>
-          <a style="display:none;" href="http://knightlab.northwestern.edu" itemprop="url" class="url">Northwestern University Knight Lab | Advancing media innovation through exploration and experimentation.</a>
-        </address>
-        <span class="copyright">| Copyright 2015, Northwestern University</span>
-      </div>
-    </div>
-  </footer> -->
+<footer class="nbn-footer"> <div class="container"> <div class="credits shift-left"> 
+    <p><strong>Winter 2015 Journalism 383 Health and Science Reporting Final Project</strong></p> 
+    <p><strong>Audio courtesy of Merriam Webster Dictionary</strong> </p>
+    <p><strong>Icons Courtesy of Font Awesome</strong></p> 
+    <p><strong>Design and Development</strong>: Eunice Lee</p> 
+    <br>
+</footer>
+    </div> </div> </footer>
 </body>
 </html>
