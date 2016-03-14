@@ -1,4 +1,4 @@
-$("#flipcard").flip();
+// $("#flipcard").flip();
 
 $( function() {
   // init Isotope
