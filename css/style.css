@@ -30,6 +30,11 @@ p.imageattribute {
   text-align: center;
 }*/
 
+.soundcite {
+  font-size: 12px;
+  float: center;
+}
+
 #flipcard p {
 	font-size: 14px;
 }
@@ -122,6 +127,12 @@ img#chemical {
 	width: 22%;
 	height: 22%;
   margin-left: 5px;
+  margin: 0px;
+}
+
+img#doxy {
+  width: 33%;
+  height: 33%;
 }
 
 img#icon {
