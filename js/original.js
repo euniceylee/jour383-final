@@ -6,7 +6,7 @@ $( function() {
     itemSelector: '.element-item',
     layoutMode: 'masonry'
   });
-  
+
   // filter functions
   var filterFns = {
     // // show if number is greater than 50
@@ -14,7 +14,8 @@ $( function() {
     //   var number = $(this).find('.number').text();
     //   return parseInt( number, 10 ) > 50;
     // },
-    // show if name ends with -ium
+
+    // filter by data category
     nosegroup: function() {
       var name = $(this).find('.nose').text();
       return name.match( /nosegroup$/ );
