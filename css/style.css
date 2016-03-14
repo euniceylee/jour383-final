@@ -18,7 +18,7 @@ div.wrapper {
 }
 
 p.imageattribute {
-  font-size: 12px !important;
+  font-size: 13px !important;
   font-style: italic;
   font-family: Lato !important;
   margin-bottom: 0px;
@@ -36,6 +36,10 @@ p.imageattribute {
 
 div.grid p{
   font-size: 13px;
+}
+
+#speakeremoji {
+  font-size: 14px;
 }
 
 /*Button shit I copied from CodePen*/
@@ -83,7 +87,6 @@ div.grid p{
   clear: both;
 }
 
-
 .button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
 .button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
 
@@ -115,23 +118,15 @@ div.grid p{
   font-weight: normal;
 }
 
-/*Ends Here*/
-
-/*Everything before isotope*/
-div.callout.panel {
-	text-align: center;
-	border-radius: 10px;
-/*	background-color: #f3f3f3;
-	border-color: #f3f3f3;*/
-}
-
-/*div.all-tools {
-	text-align: center;
-}*/
-
 img#chemical {
 	width: 22%;
 	height: 22%;
+  margin-left: 5px;
+}
+
+img#icon {
+  width: 15%;
+  height: 15%;
   margin-left: 5px;
 }
 
@@ -185,47 +180,4 @@ footer p {
   margin: 0px;
   font-size: 14px;
 /*  color: white;*/
-}
-
-
-/*
-div#flipcard {
-	position: absolute;
-	z-index: 99 !important ;
-	background-color: #effafe;
-	border-radius: 5px;
-	padding: 15px;
-	margin-bottom: 20px;
-	display: block;
-}*/
-
-/*div.openingheader p{
-	height: auto;
-	width: 60%;
-	min-height: 100%;
-	margin-left: 20%;
-	font-family: Georgia;
-	font-size: 18px;
-}*/
-
-/*img#block {
-	margin-top: 80px;
-}*/
-
-/*#wrapper {
-    width: 80%;
-    height: auto;
-    min-height: 100%;
-    margin-left: 10%;
-}
-*/
-
-/*@media (min-width: 1200px) {
-    #wrapper {
-        width: 1000px;
-        right: 0;
-        left: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }

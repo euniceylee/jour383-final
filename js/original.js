@@ -6,10 +6,7 @@ $( function() {
     itemSelector: '.element-item',
     layoutMode: 'masonry'
   });
-
-  // If you only wanna filter nose then use the call below
-  // $grid.isotope({ filter: '.nose' })
-
+  
   // filter functions
   var filterFns = {
     // // show if number is greater than 50
@@ -39,5 +36,7 @@ $( function() {
       $( this ).addClass('is-checked');
     });
   });
+
+
   
 });
