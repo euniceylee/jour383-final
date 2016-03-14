@@ -20,7 +20,9 @@ div.wrapper {
 p.imageattribute {
   font-size: 12px !important;
   font-style: italic;
-  margin-left: 0px;
+  font-family: Lato !important;
+  margin-bottom: 0px;
+  margin-left: 5px;
 }
 /*div.wrapper {
   position: relative;
