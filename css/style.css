@@ -5,13 +5,21 @@ div.wrapper {
     height: auto;
     min-height: 100%;
     margin-left: 10%;
+
 }
+
+/*div.wrapper {
+  float: center;
+  min-height: 100%;
+  width: 100%;
+  margin-left: 10%;
+}*/
 
 @media (min-width: 1200px) {
     #wrapper {
         width: 1000px;
         right: 0;
-        left: 0;
+        left: 20%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -38,9 +46,15 @@ p.imageattribute {
 	font-size: 14px;
 }
 
+
 div.grid p{
-  font-size: 13px;
+  font-size: 12px;
+  margin: 4px;
 }
+
+/*p.science {
+  font-family: Lato;
+}*/
 
 #speakeremoji {
   font-size: 14px;
@@ -103,13 +117,15 @@ div.grid p{
   position: relative;
   float: left;
   width: 500px;
-  height: 400px;
+  height: 350px;
   margin: 5px;
   padding: 10px;
   background: #effafe;
   color: #262524;
   border-radius: 10px;
-  border-color: #26D6CF;
+  border-color: #ADD8E6;
+  border-style: solid;
+  border-width: 1px;
 }
 
 
@@ -170,9 +186,9 @@ div.openingheader p#name {
 }
 
 /*For the flipcard p text sizes*/
-div.row p{
-	font-size: 13px;
-}
+/*div.row p{
+	font-size: 12px;
+}*/
 
 /*For the flipcard header text size*/
 div.row h2 {
