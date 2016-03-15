@@ -124,6 +124,9 @@ div.grid p{
   font-weight: normal;
 }
 
+b#vocab {
+  background-color: yellow;
+}
 /*For the chemical images*/
 img#chemical {
 	width: 22%;
