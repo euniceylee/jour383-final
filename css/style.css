@@ -1,5 +1,3 @@
-/*Isotope stuff*/
-
 div.wrapper {
     width: 90%;
     height: auto;
@@ -7,13 +5,6 @@ div.wrapper {
     margin-left: 10%;
 
 }
-
-/*div.wrapper {
-  float: center;
-  min-height: 100%;
-  width: 100%;
-  margin-left: 10%;
-}*/
 
 @media (min-width: 1200px) {
     #wrapper {
@@ -60,7 +51,7 @@ div.grid p{
   font-size: 14px;
 }
 
-/*Button shit I copied from CodePen*/
+/*-----A Bunch of Button CSS -----*/
 
 .button {
   /*display: inline-block;*/
@@ -108,11 +99,7 @@ div.grid p{
 .button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
 .button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
 
-/*Button shit ends here*/
-
-
-/*If I delete the grid system from purpleline and don't use callout panel*/
-
+/*Card CSS*/
 .element-item {
   position: relative;
   float: left;
@@ -128,7 +115,6 @@ div.grid p{
   border-width: 1px;
 }
 
-
 .element-item .name {
   position: block;
   text-align: center;
@@ -138,6 +124,7 @@ div.grid p{
   font-weight: normal;
 }
 
+/*For the chemical images*/
 img#chemical {
 	width: 22%;
 	height: 22%;
@@ -145,11 +132,13 @@ img#chemical {
   margin: 0px;
 }
 
+/*For that doxy image*/
 img#doxy {
   width: 33%;
   height: 33%;
 }
 
+/*For chicken noodle soup and other icons*/
 img#icon {
   width: 15%;
   height: 15%;
@@ -160,12 +149,6 @@ img#viz {
 	width: 30%;
 	height: 30%;
 }
-
-/*div.callout-panel {
-	padding: 15px;
-	border-radius: 4px;
-	margin-bottom: 20px;
-}*/
 
 /*For the introduction paragraphs*/
 div.openingheader p{
@@ -190,12 +173,20 @@ div.openingheader p#name {
 	font-size: 12px;
 }*/
 
-/*For the flipcard header text size*/
+/*For every card's header size*/
 div.row h2 {
   text-align: center;
 }
 
-/*Footer stuff*/
+/*Emoji CSS*/
+i.em.em-heavy_exclamation_mark {
+  margin-left: -7px;
+}
+
+i.em.em-two_hearts {
+  font-size: 11px;
+}
+/*Footer CSS*/
 
 footer {
   font-family: Lato !important;
@@ -204,6 +195,6 @@ footer {
 
 footer p {
   margin: 0px;
-  font-size: 14px;
+  font-size: 15px;
 /*  color: white;*/
 }
