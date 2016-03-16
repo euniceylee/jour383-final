@@ -124,8 +124,17 @@ div.grid p{
   font-weight: normal;
 }
 
-b#vocab {
+div.allbuttons {
+  float: center;
+  margin-left: 7%;
+}
+b#warning {
   background-color: yellow;
+}
+
+b#vocab {
+  background-color: #FFCC33;
+  font-weight: normal;
 }
 /*For the chemical images*/
 img#chemical {

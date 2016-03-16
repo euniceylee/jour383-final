@@ -42,14 +42,16 @@
 <!--     </form> -->
     <!-- Start messing with shit from here -->
     <div class="wrapper">
-        <div class="button-group filters-button-group" div id="buttongroup">
-            <!-- <div class="large-12 columns"> -->
-                <button class="button is-checked" data-filter="*">Show all</button>
-                <button class="button" data-filter=".cough">Cough<i class="em em-mask"></i></button>
-                <button class="button" data-filter=".nose">Runny/congested nose<i class="em em-nose"></i></button>
-                <button class="button" data-filter=".fever">Fever<i class="em em-fire"></i></button>
-                <button class="button" data-filter=".sneeze">Sneezing<i class="em em-astonished"></i></button>
-                <button class="button" data-filter=".sorethroat">Sore throat<i class="em em-collision"></i></button>
+        <div class="allbuttons">
+            <div class="button-group filters-button-group" div id="buttongroup">
+                <!-- <div class="large-12 columns"> -->
+                    <button class="button is-checked" data-filter="*">Show all</button>
+                    <button class="button" data-filter=".cough">Cough<i class="em em-mask"></i></button>
+                    <button class="button" data-filter=".nose">Runny/congested nose<i class="em em-nose"></i></button>
+                    <button class="button" data-filter=".fever">Fever<i class="em em-fire"></i></button>
+                    <button class="button" data-filter=".sneeze">Sneezing<i class="em em-astonished"></i></button>
+                    <!-- <button class="button" data-filter=".sorethroat">Sore throat<i class="em em-collision"></i></button> -->
+            </div>
         </div>
 
         <div class="grid">
@@ -57,8 +59,8 @@
                     <h3 class="name">Guaifenesin <img src="images/chemicals/guaif.png" img id="chemical"></h3>
                     <span class="soundcite" data-url="sounds/guaifenesin.mp3" data-start="0" data-plays="1">How to pronounce guaifenesin</span>
                     <p class="nose"><b>Good for: </b>runny noses and reducing cough congestion.</p>
-                    <p class="science"><b> Did you know? </b> According to the Consumer Healthcare Products Association, dextromethorphan (DXM) is a safe and effective ingredient found in more than 100 over-the-counter (OTC) cough and cold medicines. It works by <b id="vocab"> thinning and loosening mucus in the airways.</b> This clears congestion and makes breathing easier! Drinking plenty of fluids while taking this medication will help break mucus as well. </p>
-                    <p class="warnings"><i class="em em-heavy_exclamation_mark"></i>Not recommended for individuals with cystic fibrosis, asthma, or COPD </p>
+                    <p class="science"><b> Did you know? </b> If you're coughing up mucus, look for products containing this because it thins and loosens mucus in the airways. It will clear congestion and make breathing easier.</p>
+                    <p class="warnings"><i class="em em-heavy_exclamation_mark"></i>A <a href="http://www.nejm.org/doi/full/10.1056/NEJMra0910061">review article </a> published in December 2010 by the <i> New England Journal of Medicine </i>said that guaifenesin is not recommended in treatment guidelines for <b id="warning"> cystic fibrosis, asthma, or COPD.</b> That’s because those patients have important differences in pathologic mucus, so their mucus treatment should be tailored accordingly. </b> </p>
         
 
 <!-- <i id ="speakeremoji" class="em em-speaker"></i>  -->
@@ -68,15 +70,15 @@
                     <h3 class="name">Phenylephrine <img src="images/chemicals/phen.png" img id="chemical"></h3>
                     <span class="soundcite" data-url="sounds/phensound.mp3" data-start="0" data-plays="1">How to pronounce phenylephrine</span>
                     <p class="nose"><b>Good for:</b> congested or stuffy nose</p>
-                    <p class="science"><b> Did you know? </b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis quam lobortis erat sodales, a convallis elit cursus. Nullam efficitur nec dolor ut aliquam. Duis semper odio eget convallis congue. Duis luctus augue in magna vestibulum ullamcorper non et dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
-                    <p class="warnings">Not suited for asthma</p>
+                    <p class="science"><b> Did you know? </b> Phenylephrine decreases swelling in the ears and nose. It reduces discomfort and makes it easier to breathe. </p>
+                    <p class="warnings"><i class="em em-heavy_exclamation_mark"></i>According to the American Diabetes Association, being sick can make your blood glucose level go very high. Individuals with <b id="warning"> diabetes </b> already taking medication to lower high blood pressure should avoid decongestants like phenylephrine because they may contain added sugar. This combination can cause hypertension, high blood sugar, an increase risk for stroke, and poor glucose control.  </p>
           </div>
           <div class="element-item fever" data-category="fever">
                     <h3 class="name">Acetaminophen<img src="images/chemicals/acefinal.png" img id="chemical"></h3>
                     <span class="soundcite" data-url="sounds/acesound.mp3" data-start="0" data-plays="1">How to pronounce acetaminophen</span>
                     <p class="body"><b>Good for:</b> pain relief and reducing fevers</p>
                     <p class="science"><b> Did you know? </b>Commonly found in OTC drugs like Tylenol (plain), acetaminophen is the most common drug ingredient in the United States. You can find it in over 600 different medicines! </p>
-                    <p class="warnings"><i class="em em-heavy_exclamation_mark"></i>Taking more than recommended can lead to liver damage </p>
+                    <p class="warnings"><i class="em em-heavy_exclamation_mark"></i>Taking more than recommended can lead to liver damage. <b id="warning"> OTC pain reducers and prescription blood thinners </b> can be dangerous drug-drug interaction and cause gastrointestinal bleeding. </p>
           </div>
           <div class="element-item cough" data-category="cough">
                     <h3 class="name">Dextromethorphan HBr <img src="images/chemicals/dextro.png" img id="chemical"></h3>
@@ -110,68 +112,6 @@
           </div> -->
         </div>
     </div>
-
-   <!--  <div class="grid">
-        <div class="element-item transition metal">...</div>
-        <div class="element-item post-transition metal">...</div>
-        <div class="element-item alkali metal">...</div>
-        <div class="element-item transition metal">...</div>
-        <div class="element-item lanthanoid metal inner-transition">...</div>
-        <div class="element-item halogen nonmetal">...</div>
-        <div class="element-item alkaline-earth metal">...</div>
-    </div> -->
-
-
-    <!-- <div class="all-tools">
-            <div class="row">
-                <div class="large-6 medium-4 small-2 columns">
-                    <div class="callout panel" id="flipcard"> -->
-                    <!-- <div id="flipcard"> -->
-                        <!-- <div class="front">
-                            <h2 class>Guaifenesin</span></h1>
-                                <img src="images/icons/noun_57952_cc.png" img id="chemical">
-                            <p><b><i>Cough congestant.</i></b></p>
-                            <p> Good for: runny noses and reducing cough congestion.</p>
-                            <p></p>
-                        </div>
-                        <div class="back">
-                            <p> <b> Science stuff here </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis quam lobortis erat sodales, a convallis elit cursus. Nullam efficitur nec dolor ut aliquam. Duis semper odio eget convallis congue. Duis luctus augue in magna vestibulum ullamcorper non et dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque f</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="large-6 medium-4 small-2 columns">
-                    <div class="callout panel">
-                        <h2 class>Dextromethorphan HBr</h1>
-                            <img src="images/icons/noun_273609_cc.png" img id="chemical">
-                        <p><b><i>Cough suppressant</p></b></i>
-                        <p> Good for: temporarily relieving coughs caused by minor throat irritation </p>
-                    </div>
-                </div>
-                <div class="large-6 medium-4 small-2 columns">
-                    <div class="callout panel">
-                        <h2 class>Chicken Noodle Soup</h1>
-                            <img src="images/icons/noun_8913_cc.png" img id="chemical">
-                        <p><b><i>(What it does/treats)</p></b></i>
-                        <p> Good for: </p>
-                    </div>
-                </div>
-                <div class="large-6 medium-4 small-2 columns">
-                    <div class="callout panel">
-                        <h2 class>Neti pot</h1>
-                            <img src="images/icons/noun_203003_cc.png" img id="viz">
-                        <p><b><i>(What it does/treats)</p></b></i>
-                        <p> Good for: </p>
-                    </div>
-                </div>
-                <div class="large-6 medium-4 small-2 columns">
-                    <div class="callout panel">
-                        <h2 class>Phenylephrine</h1>
-                            <img src="images/icons/noun_26010_cc.png" img id="viz">
-                        <p><b><i>(What it does/treats)</p></b></i>
-                        <p> Good for: Nasal decongestant </p>
-                    </div>
-                </div>
-            </div> -->
             <br>
             <br>
             <br>
@@ -188,7 +128,7 @@
 <!-- Footer -->
 <footer class="nbn-footer"> <div class="container"> <div class="credits shift-left"> 
     <p><strong>Winter 2015 Journalism 383 Health and Science Reporting Final Project</strong></p>
-    <p> Icons courtesy of Font Awesome </p>
+    <p> Icons courtesy of The Noun Project </p>
     <p> Emojis courtesy of Emoji Cheat Sheet </p>
     <p> Design, development, and audio made with <i class="em em-two_hearts"></i> by Eunice Lee</p> 
 <!--     <p><strong>Audio</strong>: Merriam-Webster's Medical Dictionary</p>
